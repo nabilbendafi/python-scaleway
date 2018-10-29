@@ -27,6 +27,7 @@ MODULE_NAME = 'scaleway'
 PACKAGE_NAME = 'scaleway-sdk'
 
 DEPENDENCIES = [
+    'prompt-toolkit',
     'slumber >= 0.6.2',
     'six']
 
@@ -41,6 +42,7 @@ EXTRA_DEPENDENCIES = {
     # Extra dependencies are made available through the
     # `$ pip install .[keyword]` command.
     'tests': [
+        'click',
         'coverage',
         'httpretty >= 0.8.0',
         'mock',
@@ -160,6 +162,8 @@ setup(
     ],
 
     entry_points={
-        'console_scripts': [],
+        'console_scripts': [
+            'swc=scaleway.console.cli:cli'
+        ]
     }
 )
