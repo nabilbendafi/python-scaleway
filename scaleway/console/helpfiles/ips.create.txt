@@ -1,0 +1,8 @@
+Command: ips create
+
+Usage: ips create
+
+Create a new reserved IP address
+
+Examples:
+   ips create

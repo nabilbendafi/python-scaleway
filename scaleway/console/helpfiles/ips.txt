@@ -1,0 +1,2 @@
+Contains subcommands to work with IP adresses features. These include features
+such as listing, creating, attaching or deleting IPs.
